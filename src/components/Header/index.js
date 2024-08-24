@@ -11,7 +11,7 @@ import {
 } from "@nextui-org/react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import { CurelyButton as Button } from "../../lib/Button";
+import { CurelyButton } from "../../lib/Button";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,7 +56,9 @@ const Header = () => {
           <NavbarItem key={index}>
             <Link
               className={`${
-                item.path == path ? "text-green-800 font-bold" : "font-semibold"
+                item.path === path
+                  ? "text-green-800 font-bold"
+                  : "font-semibold"
               }`}
               color="foreground"
               to={item.path}
@@ -69,15 +71,15 @@ const Header = () => {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button
-            className="font-bold text-green-800"
+          <CurelyButton
+            className="font-bold text-green-800 border-green-800"
             as={Link}
             color="curely_green"
             to="/sign-up"
             variant="bordered"
           >
             Sign Up
-          </Button>
+          </CurelyButton>
         </NavbarItem>
       </NavbarContent>
 
@@ -87,7 +89,7 @@ const Header = () => {
             <Link
               onClick={() => setIsMenuOpen(false)}
               className={`${
-                item.path == path
+                item.path === path
                   ? "w-full font-bold text-green-800"
                   : " w-full font-demibold"
               }`}
