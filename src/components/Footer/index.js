@@ -79,7 +79,7 @@ const Footer = () => {
                       width="36"
                       alt="curely logo"
                     />
-                    <h2 className="text-2xl font-bold">Curely</h2>
+                    <h2 className="text-2xl font-semibold">Curely</h2>
                   </div>
 
                   <p className="mt-4">
@@ -98,7 +98,7 @@ const Footer = () => {
                       className="w-full my-3 border-green-800 sm:text-sm"
                     />
 
-                    <CurelyButton className="mt-1 w-full bg-green-800 px-6 py-3 text-sm font-bold tracking-wide text-white transition-none hover:bg-green-900 sm:mt-0 sm:w-auto sm:shrink-0">
+                    <CurelyButton className="mt-1 w-full bg-green-800 px-6 py-3 text-sm font-medium tracking-wide text-white transition-none hover:bg-green-900 sm:mt-0 sm:w-auto sm:shrink-0">
                       Subscribe
                     </CurelyButton>
                   </div>

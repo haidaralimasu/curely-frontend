@@ -57,8 +57,8 @@ const Header = () => {
             <Link
               className={`${
                 item.path === path
-                  ? "text-green-800 font-bold"
-                  : "font-semibold"
+                  ? "text-green-800 font-semibold"
+                  : "font-medium"
               }`}
               color="foreground"
               to={item.path}
@@ -72,7 +72,7 @@ const Header = () => {
       <NavbarContent justify="end">
         <NavbarItem>
           <CurelyButton
-            className="font-bold text-green-800 border-green-800"
+            className="font-semibold text-green-800 border-green-800"
             as={Link}
             color="curely_green"
             to="/sign-up"
@@ -90,8 +90,8 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
               className={`${
                 item.path === path
-                  ? "w-full font-bold text-green-800"
-                  : "w-full font-demibold"
+                  ? "w-full font-semibold text-green-800"
+                  : "w-full font-medium"
               }`}
               to={item.path}
               size="lg"

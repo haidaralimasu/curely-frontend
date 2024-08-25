@@ -1,21 +1,19 @@
 import { React } from "react";
 import { CurelyButton } from "../../lib/Button";
-import { Input } from "@nextui-org/react";
+import { Input, Image } from "@nextui-org/react";
+import heroImg from "../../assets/hero.png";
 
 const Hero = () => {
   return (
     <>
-      <section className="mt-20 mx-auto max-w-screen-lg pb-4 px-4 items-center lg:flex md:px-8">
+      <section className="mt-24 mx-auto max-w-screen-lg pb-4 px-4 items-center lg:flex md:px-8">
         <div className="space-y-4 flex-1 sm:text-center lg:text-left">
-          <h1 className="text-gray-800 font-bold text-4xl xl:text-5xl">
-            Empower Your Wellness with
+          <h1 className="text-gray-800 font-medium text-4xl xl:text-5xl">
+            Healthier, Happier you with
             <span className="text-green-800"> Curely.</span>
           </h1>
           <p className="max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
-            Welcome to Curely, your trusted partner in achieving optimal health
-            and well-being. We provide personalized resources, expert advice,
-            and innovative solutions to support your journey towards a
-            healthier, happier life.
+            Get tailored support and advice for your health conditions.
           </p>
           <div>
             <p className="text-gray-500 py-3">
@@ -37,8 +35,9 @@ const Hero = () => {
           </div>
         </div>
         <div className="flex-1 text-center mt-4 lg:mt-0 lg:ml-3">
-          <img
-            src="https://i.postimg.cc/kgd4WhyS/container.png"
+          <Image
+            src={heroImg}
+            alt="hero image"
             className="w-full mx-auto sm:w-10/12  lg:w-full"
           />
         </div>
