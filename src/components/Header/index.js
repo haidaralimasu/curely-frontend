@@ -91,7 +91,7 @@ const Header = () => {
               className={`${
                 item.path === path
                   ? "w-full font-bold text-green-800"
-                  : " w-full font-demibold"
+                  : "w-full font-demibold"
               }`}
               to={item.path}
               size="lg"
