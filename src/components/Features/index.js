@@ -1,5 +1,4 @@
 import React from "react";
-import arrowIcon from "../../assets/rightArrow.svg";
 import calorie from "../../assets/calorie.svg";
 import sugar from "../../assets/sugar.svg";
 import fitness from "../../assets/fitness.svg";
@@ -35,24 +34,16 @@ const Features = () => {
     <section className="py-24 ">
       <div className="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
         <div className="mb-10 lg:mb-16 flex justify-center items-center flex-col gap-x-0 gap-y-6 lg:gap-y-0 lg:flex-row lg:justify-between max-md:max-w-lg max-md:mx-auto">
-          <div className="relative w-full text-center lg:text-left lg:w-2/4">
+          <div className="relative w-full lg:text-left lg:w-2/4">
             <h1 className="text-gray-800 font-medium text-4xl xl:text-5xl">
               Healthier, Happier you with
             </h1>
           </div>
-          <div className="relative w-full text-center  lg:text-left lg:w-2/4">
+          <div className="relative w-full lg:text-left lg:w-2/4">
             <p className="text-lg font-normal text-gray-500 mb-5">
               We provide all the advantages that can simplify all your financial
               transactions without any further requirements
             </p>
-            <a
-              href="https://www.example.com"
-              target="_blank"
-              rel="noreferrer"
-              className="flex flex-row items-center justify-center gap-2 text-base font-semibold text-green-800 lg:justify-start hover:text-green-900 "
-            >
-              Button CTA <Image src={arrowIcon} alt="arrow" />
-            </a>
           </div>
         </div>
 
