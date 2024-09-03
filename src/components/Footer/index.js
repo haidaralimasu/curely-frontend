@@ -94,11 +94,15 @@ const Footer = () => {
                   <div className="p-2 sm:flex sm:items-center sm:gap-4">
                     <Input
                       type="email"
+                      size="lg"
                       placeholder="john@rhcp.com"
                       className="w-full my-3 border-green-800 sm:text-sm"
                     />
 
-                    <CurelyButton className="mt-1 w-full bg-green-800 px-6 py-3 text-sm font-medium tracking-wide text-white transition-none hover:bg-green-900 sm:mt-0 sm:w-auto sm:shrink-0">
+                    <CurelyButton
+                      size="lg"
+                      className="mt-1 w-full bg-green-800 px-6 py-3 text-sm font-medium tracking-wide text-white transition-none hover:bg-green-900 sm:mt-0 sm:w-auto sm:shrink-0"
+                    >
                       Subscribe
                     </CurelyButton>
                   </div>

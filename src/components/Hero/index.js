@@ -25,10 +25,14 @@ const Hero = () => {
             >
               <Input
                 type="text"
+                size="lg"
                 placeholder="Enter your email"
-                className="text-gray-500  outline-none p-3 rounded-md w-full sm:w-72"
+                className="text-gray-800 outline-none p-1 w-full sm:w-72"
               />
-              <CurelyButton className="outline-none mx-2 bg-green-800 text-white text-center  py-3  shadow w-full sm:w-auto">
+              <CurelyButton
+                size="lg"
+                className="outline-none mx-2 bg-green-800 text-white text-center  py-3  shadow w-full sm:w-auto"
+              >
                 Subscribe
               </CurelyButton>
             </form>
